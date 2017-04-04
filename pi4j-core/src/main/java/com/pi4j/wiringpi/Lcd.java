@@ -97,7 +97,7 @@ public class Lcd {
      * </p>
      *
      * <pre>
-     * int lcdInit(int rows, int cols, int bits, int rs, int strb, int d0, int d1, int d2, int d3, int d4,
+     * int lcdInit(int rows, int cols, int bits, int rs, int strb, int f, int ft, int d0, int d1, int d2, int d3, int d4,
      *         int d5, int d6, int d7);
      * </pre>
      *
@@ -132,6 +132,8 @@ public class Lcd {
      * @param bits number of bits wide on the interface (4 or 8)
      * @param rs pin number of the RS pin
      * @param strb pin number of the strobe (E) pin
+     * @param f font variant: 0 - 5x8, 1 - 5x10
+     * @param ft font table: 0 - eng jap, 1 - eng weurop, 2 - eng rus
      * @param d0 pin number for driving bit 1
      * @param d1 pin number for driving bit 2
      * @param d2 pin number for driving bit 3
@@ -142,7 +144,7 @@ public class Lcd {
      * @param d7 pin number for driving bit 8 (only used in 8-bit mode)
      * @return The return value is the ‘handle’ to be used for all subsequent calls to the lcd library when dealing with that LCD, or -1 to indicate a fault. (Usually incorrect parameters)
      */
-    public static native int lcdInit(int rows, int cols, int bits, int rs, int strb, int d0,
+    public static native int lcdInit(int rows, int cols, int bits, int rs, int strb, int d0, int f, int ft,
             int d1, int d2, int d3, int d4, int d5, int d6, int d7);
 
     /**

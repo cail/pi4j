@@ -81,7 +81,8 @@ WIRINGPI_PLATFORM=raspberrypi
 
 # build wiringPi
 #export WIRINGPI_REPO=git://git.drogon.net/wiringPi
-export WIRINGPI_REPO=https://github.com/Pi4J/wiringPi
+#export WIRINGPI_REPO=https://github.com/Pi4J/wiringPi
+export WIRINGPI_REPO=https://github.com/cail/wiringPi
 export WIRINGPI_BRANCH=master
 export WIRINGPI_DIRECTORY=wiringPi
 rm --recursive --force wiringPi

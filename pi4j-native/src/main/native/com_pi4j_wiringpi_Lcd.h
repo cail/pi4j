@@ -41,7 +41,7 @@ extern "C" {
  * Signature: (IIIIIIIIIIIII)I
  */
 JNIEXPORT jint JNICALL Java_com_pi4j_wiringpi_Lcd_lcdInit
-  (JNIEnv *, jclass, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint);
+  (JNIEnv *, jclass, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint);
 
 /*
  * Class:     com_pi4j_wiringpi_Lcd

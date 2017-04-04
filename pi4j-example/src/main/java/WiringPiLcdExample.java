@@ -55,6 +55,8 @@ public class WiringPiLcdExample {
                                    LCD_BITS,     // number of bits used to communicate to LCD
                                    11,           // LCD RS pin
                                    10,           // LCD strobe pin
+                                   0,            // Font type
+                                   0,            // Font table
                                    0,            // LCD data bit 1
                                    1,            // LCD data bit 2
                                    2,            // LCD data bit 3

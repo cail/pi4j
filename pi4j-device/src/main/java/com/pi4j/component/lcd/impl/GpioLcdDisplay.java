@@ -57,7 +57,7 @@ public class GpioLcdDisplay extends LCDBase implements LCD
                                 columns,
                                 dataPins.length,
                                 rsPin.getAddress(),
-                                strobePin.getAddress(),
+                                strobePin.getAddress(), 0, 0,
                                 bits[0], bits[1], bits[2], bits[3], bits[4], bits[5], bits[6], bits[7]);
 
         // verify LCD initialization

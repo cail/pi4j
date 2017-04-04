@@ -40,9 +40,9 @@
  * Signature: (IIIIIIIIIIIII)I
  */
 JNIEXPORT jint JNICALL Java_com_pi4j_wiringpi_Lcd_lcdInit
-  (JNIEnv *env, jclass class, jint rows, jint cols, jint bits, jint rs, jint strb, jint d0, jint d1, jint d2, jint d3, jint d4, jint d5, jint d6, jint d7)
+  (JNIEnv *env, jclass class, jint rows, jint cols, jint bits, jint rs, jint strb, jint f, jint ft, jint d0, jint d1, jint d2, jint d3, jint d4, jint d5, jint d6, jint d7)
 {
-	return lcdInit(rows, cols, bits, rs, strb, d0, d1, d2, d3, d4, d5, d6, d7);
+	return lcdInit(rows, cols, bits, rs, strb, f, ft, d0, d1, d2, d3, d4, d5, d6, d7);
 }
 
 /*
